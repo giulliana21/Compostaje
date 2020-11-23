@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--META-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PROYECTO AC</title>
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+    <!-- ICONOS GOOGLE -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!--script src="control.js"></script-->
+
+
+    <script>
+        $(document).ready(function() {
+
+            // Botón de top
+            $("#ico-menu").click(function() {
+                var body = $("html, body");
+                $("#btTop").click(function() {
+                    body.animate({
+                        scrollTop: 0
+                    }, 500);
+                });
+                $("#menu-header").slideToggle();
+            });
+            var body = $("html, body");
+            $("#btTop").click(function() {
+                body.animate({
+                    scrollTop: 0
+                }, 500);
+            });
+        });
+    </script>
+    <!--SCRIPT BOTÓN STEAM-->
+    <script>
+        $(document).ready(function() {
+            var body = $("html, body");
+            $('#STEAM').click(function() {
+                location.href = "https://view.genial.ly/5fa8b412b0c2ba0d08c03796/interactive-image-steam-proyecto";
+            })
+        })
+    </script>
+
+
+    <!--SCRIPT BOTÓN COMPOST-->
+    <script>
+        $(document).ready(function() {
+            var body = $("html, body");
+            $('#plus-entrada1').click(function() {
+                $('#toggle').slideToggle();
+                body.animate({
+                    scrollTop: 1200
+                }, 500);
+                if (('#toggle2' && '#toggle3').slideToggle = true) {
+                    $('#toggle2').hide();
+                    $('#toggle3').hide();
+                } else if (('#toggle2' || '#toggle3').slideToggle = true) {
+                    $('#toggle2').hide();
+                    $('#toggle3').hide();
+                }
+
+
+            })
+        })
+    </script>
+    <!--SCRIPT BOTÓN VERMICOMPOST-->
+    <script>
+        $(document).ready(function() {
+            var body = $("html, body");
+            $('#plus-entrada2').click(function() {
+                $('#toggle2').slideToggle();
+                body.animate({
+                    scrollTop: 1200
+                }, 500);
+                if (('#toggle' && '#toggle3').slideToggle = true) {
+                    $('#toggle').hide();
+                    $('#toggle3').hide();
+                } else if (('#toggle' || '#toggle3').slideToggle = true) {
+                    $('#toggle').hide();
+                    $('#toggle3').hide();
+                }
+
+
+            })
+        })
+    </script>
+    <!--SCRIPT BOTÓN BOKASHI-->
+    <script>
+        $(document).ready(function() {
+            var body = $("html, body");
+            $('#plus-entrada3').click(function() {
+                $('#toggle3').slideToggle();
+                body.animate({
+                    scrollTop: 1200
+                }, 500);
+                if (('#toggle' && '#toggle2').slideToggle = true) {
+                    $('#toggle').hide();
+                    $('#toggle2').hide();
+                } else if (('#toggle' || '#toggle2').slideToggle = true) {
+                    $('#toggle').hide();
+                    $('#toggle2').hide();
+                }
+            })
+        })
+    </script>
+    <!--SCRIPT BOTÓN TEST HUMEDAD-->
+    <script>
+        $(document).ready(function() {
+            var body = $("html, body");
+            $('#testhumedad').click(function() {
+                location.href = "https://view.genial.ly/5f8da9400920200d294d99a5/interactive-image-test-de-humedad";
+            })
+        })
+    </script>
+    <!--SCRIPT BOTÓN CUIDAD0S COMPOST-->
+    <script>
+        $(document).ready(function() {
+            var body = $("html, body");
+            $('#cuidadocompost').click(function() {
+                location.href = "https://view.genial.ly/5f960491ee51500d29da564b/interactive-image-cuidado-del-compostaje";
+            })
+        })
+    </script>
+    <!--SCRIPT BOTÓN CAPAS MATERIAS-->
+    <script>
+        $(document).ready(function() {
+            var body = $("html, body");
+            $('#capasMaterias').click(function() {
+                location.href = "https://view.genial.ly/5f95ec1342a7e67a196e09f2/interactive-image-capas";
+            })
+        })
+    </script>
+
+
+
+</head>
+
+<body>
+    <img src="images/menu.svg" alt="icono menu" id="ico-menu">
+
+
+    <!-- header -->
+    <header id="header-index">
+
+
+
+        <!-- logo en header -->
+        <div id="logo-header">
+            <img src="images/LOGO  BLACK.png" alt="logo">
+        </div>
+
+
+        <!-- menu prinipal -->
+        <!--nav id="menu-header">
+            <a href="" id="recetas">RECETAS</a>
+            <a href="" id="contenido">CONTENIDO</a>
+            <a href="" id="paso-a-paso">PASO A PASO</a>
+        </nav-->
+
+
+        <!-- back de header -->
+        <div id="back-header">
+            <img src="images/Compost2.jpg" alt="fondo">
+        </div>
+
+
+
+    </header>
+
+    <!-- section principal -->
+
+    <section id="section-index">
+
+        <h2>BIENVENIDO</h2>
+        <p>Somos una página didáctica que busca reducir el consumo y los desechos orgánicos, con nosotros podrás aprovechar tus desechos orgánicos convirtiéndolos en compostaje para tus plantas. Además de esto implementamos la filosofia STEAM dentro de nuestro
+            proyecto, si quieres saber que es esto da click al botón.
+        </p>
+        <a id="STEAM" class="boton">FILOSOFIA STEAM</a>
+
+    </section>
+
+
+
+
+
+    <!-- Entradas principales -->
+    <section class="entradas">
+        <div id="entradas-index">
+            <article class="entrada">
+                <figure>
+                    <span id="plus-entrada1" class="boton plus-entrada">+</span>
+                    <img src="images/Compost1.jpg">
+                </figure>
+                <h5>COMPOST COMÚN</h5>
+            </article>
+
+            <article class="entrada">
+                <figure>
+                    <span id="plus-entrada2" class="boton plus-entrada">+</span>
+                    <img src="images/Compost3.jpg">
+                </figure>
+                <h5>VERMICOMPOST</h5>
+
+            </article>
+
+            <article class="entrada">
+                <figure>
+                    <span id="plus-entrada3" class="boton plus-entrada">+</span>
+                    <img src="images/bokashi.jpg">
+                </figure>
+                <h5>BOKASHI</h5>
+            </article>
+
+        </div>
+    </section>
+    <!--ENTRADAS TOGGLE-->
+    <section id="toggle">
+        <section id="compost">
+            <h5>COMPOST COMÚN</h5>
+            <p>A continuación te mostraremos paso a paso la creación del compostaje común. Contamos con recursos multimedia como videos que te ayudarán con la construcción de tu propio compostaje casero, además de esto, podrás acceder a una experencia de
+                realidad aumentada en la que verás en 3D un modelo de cómo debería quedar tu compost terminado.</p>
+            <video controls>
+                <source src="images/videos/ParaTenerEncuenta.mp4">
+            </video>
+            <p>Por medio de este Link tendrás acceso a una experiencia de Realidad Aumentada para ver el producto final del compost, copialo y pegalo en el buscador de tu dispositivo móvil para vivir la realidad aumentada. https://giulliana21.github.io/Realidad-Aumentada-AC/</p>
+            <img src="images/marcadores/Marcador1.png" id="img1">
+
+        </section>
+    </section>
+    <section id="toggle2">
+        <section id="vermi">
+            <h5>VERMICOMPOST</h5>
+            <p>A continuación te mostraremos paso a paso la creación del compostaje común. Contamos con recursos multimedia como videos que te ayudarán con la construcción de tu propio compostaje casero, además de esto, podrás acceder a una experencia de
+                realidad aumentada en la que verás en 3D un modelo de cómo debería quedar tu compost terminado.</p>
+            <video controls>
+                <source src="images/videos/Vermicompost.mp4">
+            </video>
+
+            <p>Por medio de este Link tendrás acceso a una experiencia de Realidad Aumentada para ver el producto final del compost, copialo y pegalo en el buscador de tu dispositivo móvil para vivir la realidad aumentada. https://giulliana21.github.io/Realidad-Aumentada-AC/</p>
+            <img src="images/marcadores/Marcador2.png" id="img2">
+
+        </section>
+    </section>
+    <section id="toggle3">
+        <section id="bokashi">
+            <h5>BOKASHI</h5>
+            <p>A continuación te mostraremos paso a paso la creación del compostaje común. Contamos con recursos multimedia como videos que te ayudarán con la construcción de tu propio compostaje casero, además de esto, podrás acceder a una experencia de
+                realidad aumentada en la que verás en 3D un modelo de cómo debería quedar tu compost terminado.</p>
+            <video controls>
+                <source src="images/videos/Bokashi.mp4">
+            </video>
+            <p>Por medio de este Link tendrás acceso a una experiencia de Realidad Aumentada para ver el producto final del compost, copialo y pegalo en el buscador de tu dispositivo móvil para vivir la realidad aumentada. https://giulliana21.github.io/Realidad-Aumentada-AC/</p>
+            <img src="images/marcadores/Marcador3.png" id="img3">
+
+        </section>
+    </section>
+    <!--A TENER EN CUENTA links interesantes-->
+
+    <section id="links">
+        <h5>CUIDADOS DEL COMPOST</h5>
+        <p>Como sabes, este tipo de procesos tienen un cuidado especial que si no se mantienen pueden hacer que todo tu compost sea menos eficiente, por lo cual aquí te presentamos algunas maneras útiles de cuidar tu compostaje
+        </p>
+        <a id="testhumedad" class="boton">Test de Humedad</a>
+        <a id="cuidadocompost" class="boton">Cuidado del Compostaje</a>
+        <a id="capasMaterias" class="boton">Capas de Materias</a>
+
+
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <footer id="footer-index">
+
+        <!-- logo en footer -->
+        <div id="logo-footer">
+            <img src="images/LOGO WHITE.png" alt="LogoFooter">
+        </div>
+
+        <!-- info en footer -->
+        <ul id="info-footer">
+            <li>
+
+                <h6>Un proyecto hecho y desarrollado por:</h6>
+                <p>Laura Sánchez</p>
+                <p>Giulliana Cortés</p>
+                <p>Karol Tatiana Guacas</p>
+
+            </li>
+
+            <li>
+                <span class="material-icons">
+						stay_primary_portrait
+					</span>
+                <p> Si quieres comunicarte o necesitas soporte, puedes llamar a éste número:</p>
+                <p>314 637 6815</p>
+            </li>
+        </ul>
+
+        <!-- Bt go TOP -->
+        <div id="btTop">
+            <span class="material-icons">
+					keyboard_arrow_up
+				</span>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
